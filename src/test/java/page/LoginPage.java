@@ -1,7 +1,6 @@
-package ru.netology.page;
-
+package page;
 import com.codeborne.selenide.SelenideElement;
-import ru.netology.data.DataHelper;
+import data.DataHelper;
 
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Condition.visible;

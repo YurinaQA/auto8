@@ -1,14 +1,14 @@
-package ru.netology.test;
+package test;
 
 import org.junit.jupiter.api.BeforeEach;
-import ru.netology.data.DataHelper;
-import ru.netology.data.SQLHelper;
+import data.DataHelper;
+import data.SQLHelper;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import ru.netology.page.LoginPage;
+import page.LoginPage;
 import static com.codeborne.selenide.Selenide.open;
-import static ru.netology.data.SQLHelper.cleanDatabase;
+import static data.SQLHelper.cleanDatabase;
 
 public class SQLTest {
 
@@ -52,5 +52,3 @@ public class SQLTest {
         verificationPage.verifyErrorNotification("Ошибка! \nНеверно указан код! Попробуйте ещё раз.");
     }
 }
-
-
